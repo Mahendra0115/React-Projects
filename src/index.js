@@ -1,17 +1,92 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+
+// import Test  from "./ClassComponent/Test";
+// import Login from "./ClassComponent/Login";
+
+//  [ Functions ]
+// import TestFunction from "./FunctionComponent/TestFunction";   // here import for RegularFunction
+// import TestF from "./FunctionComponent/TestFunction";           // here import for AnonymousFunction
+// import  {ArrowF}  from "./FunctionComponent/TestFunction";     // here import for Fat ArrowFunction
+
+// [ArrayObjects]
+
+// import  ArrayOfObject  from "./ClassComponent/ArrayOfObject";
+// import  ArrayOfObject  from "./FunctionComponent/ArrayOfObject";
+
+// [Props -> ParentComponent]
+
+// import ParentComponent from "./ClassComponent/Props/ParentComponent";
+//  import ParentComponent from "./FunctionComponent/Props/ParentComponent";
+
+// [State]
+import StateExample from './ClassComponent/States/StateExample.jsx';
+import UserForm from "./FunctionComponent/States/UserForm.jsx";
+import UserForm2 from "./FunctionComponent/States/UserForm2.jsx";
+import DarkMoDode from "./FunctionComponent/States/DarkMoDode.jsx";
+
+
+
+
+
+
+
+
+
+
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+//   root.render(
+//    <>
+//    <h1>hello export react</h1>
+
+//     </>
+//   )
+
+// CLASS_COMPONENT
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//  <>
+//       <Test/>
+//       <Login/>
+//   </>
+// )
+
+//  [ FunctionalComponent  ]
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <>
+//     <TestFunction/>
+//     <TestF/>
+
+//     <ArrowF/>
+//     <ArrayOfObject />
+
+//   </>
+// );
+
+// [Props]
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+//   root.render(
+//     <>
+//      {/* <ParentComponent/> */}
+//      <ParentComponent/>
+//     </>
+//   )
+
+//  [State]
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <>
+    <StateExample />
+    <UserForm/>
+    <UserForm2/>
+     <DarkMoDode/>
+  </>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
